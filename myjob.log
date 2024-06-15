@@ -1,0 +1,56 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c39b12>
+Subject: Job 9816677: <#!/bin/bash;#BSUB -R select[rh=6];#BSUB -app RHEL7;#BSUB -n 1;#BSUB -W 4:00;#BSUB -R rusage[mem=500];#BSUB -q short;#BSUB -eo myjob.err;#BSUB -oo myjob.log; module load python3/3.5.0_packages/numpy/1.18.5; (python3 PreProcessing.py -pt "$1" -c "$2") > ../recon_reports/report_"$1"_"$2".txt 2>&1> in cluster <umghpcc> Exited
+
+Job <#!/bin/bash;#BSUB -R select[rh=6];#BSUB -app RHEL7;#BSUB -n 1;#BSUB -W 4:00;#BSUB -R rusage[mem=500];#BSUB -q short;#BSUB -eo myjob.err;#BSUB -oo myjob.log; module load python3/3.5.0_packages/numpy/1.18.5; (python3 PreProcessing.py -pt "$1" -c "$2") > ../recon_reports/report_"$1"_"$2".txt 2>&1> was submitted from host <ghpcc06> by user <wm11w> in cluster <umghpcc> at Thu Sep  8 12:47:32 2022
+Job was executed on host(s) <c39b12>, in queue <short>, as user <wm11w> in cluster <umghpcc> at Thu Sep  8 12:47:33 2022
+</home/wm11w> was used as the home directory.
+</project/umw_michael_king/Will/New_Framework/src> was used as the working directory.
+Started at Thu Sep  8 12:47:33 2022
+Terminated at Thu Sep  8 12:47:42 2022
+Results reported at Thu Sep  8 12:47:42 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -R select[rh=6]
+#BSUB -app RHEL7
+#BSUB -n 1
+#BSUB -W 4:00
+#BSUB -R rusage[mem=500]
+#BSUB -q short
+#BSUB -eo myjob.err
+#BSUB -oo myjob.log
+
+module load python3/3.5.0_packages/numpy/1.18.5
+
+(python3 PreProcessing.py -pt "$1" -c "$2") > ../recon_reports/report_"$1"_"$2".txt 2>&1
+------------------------------------------------------------
+
+TERM_MEMLIMIT: job killed after reaching LSF memory usage limit.
+Exited with signal termination: 25.
+
+Resource usage summary:
+
+    CPU time :                                   6.75 sec.
+    Max Memory :                                 500 MB
+    Average Memory :                             396.33 MB
+    Total Requested Memory :                     500.00 MB
+    Delta Memory :                               0.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                13
+    Run time :                                   21 sec.
+    Turnaround time :                            10 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <myjob.err> for stderr output of this job.
+
