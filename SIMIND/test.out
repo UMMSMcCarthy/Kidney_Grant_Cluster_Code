@@ -1,0 +1,56 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c37b11>
+Subject: Job 5097003: <#BSUB -L /bin/bash;#BSUB -R select[rh=8];#BSUB -n 1;#BSUB -W 20:00;#BSUB -R rusage[mem=1024];#BSUB -oo test.out;#BSUB -eo test.err;#BSUB -q long; export PATH=$PATH:/home/wm11w/simind;export SMC_DIR=/home/wm11w/simind/smc_dir/; (time ./simind bench.smc) > test.txt 2>&1> in cluster <umghpcc> Done
+
+Job <#BSUB -L /bin/bash;#BSUB -R select[rh=8];#BSUB -n 1;#BSUB -W 20:00;#BSUB -R rusage[mem=1024];#BSUB -oo test.out;#BSUB -eo test.err;#BSUB -q long; export PATH=$PATH:/home/wm11w/simind;export SMC_DIR=/home/wm11w/simind/smc_dir/; (time ./simind bench.smc) > test.txt 2>&1> was submitted from host <ghpcc06> by user <wm11w> in cluster <umghpcc> at Thu Apr 14 13:14:27 2022
+Job was executed on host(s) <c37b11>, in queue <long>, as user <wm11w> in cluster <umghpcc> at Thu Apr 14 13:14:29 2022
+</home/wm11w> was used as the home directory.
+</home/wm11w/simind> was used as the working directory.
+Started at Thu Apr 14 13:14:29 2022
+Terminated at Thu Apr 14 13:14:55 2022
+Results reported at Thu Apr 14 13:14:55 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#BSUB -L /bin/bash
+#BSUB -R select[rh=8]
+#BSUB -n 1
+#BSUB -W 20:00
+#BSUB -R rusage[mem=1024]
+#BSUB -oo test.out
+#BSUB -eo test.err
+#BSUB -q long
+
+export PATH=$PATH:/home/wm11w/simind
+export SMC_DIR=/home/wm11w/simind/smc_dir/
+
+(time ./simind bench.smc) > test.txt 2>&1
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   22.70 sec.
+    Max Memory :                                 12 MB
+    Average Memory :                             12.00 MB
+    Total Requested Memory :                     1024.00 MB
+    Delta Memory :                               1012.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                6
+    Run time :                                   39 sec.
+    Turnaround time :                            28 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <test.err> for stderr output of this job.
+

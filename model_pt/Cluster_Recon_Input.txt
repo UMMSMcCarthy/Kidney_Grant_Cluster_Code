@@ -1,0 +1,40 @@
+Patient Number:	373	#not used in parser, must be supplied on command line
+Case_number: 1 
+Percision: 256
+Number_of_Projections: 120
+add_noise: False
+file_list: bgd spl lvr rkd lkd ls1 ls2 ls3
+Case1: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0
+Case2: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0
+Case3: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0
+Case4: 1.0 1.0 1.0 1.0 1.0 -1.0 0.0 0.0
+Case5: 1.0 1.0 1.0 1.0 1.0 0.0 -1.0 0.0
+Case6: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 -1.0
+Case7: 1.0 1.0 1.0 1.0 1.0 -1.0 0.0 -0.75
+Case8: 1.0 1.0 1.0 1.0 1.0 -0.75 -1.0 0.0
+Case9: 1.0 1.0 1.0 1.0 1.0 0.0 -0.75 -1.0
+Case10: 1.0 1.0 1.0 1.0 1.0 0.0 0.0 0.0
+
+Define the scale for the noise in each reconstruction. 1-Clinical Noise Levels, >1 Reduced Noise Levels, <1 Increased Noise Levels (Scale1 is normally unused and reconstructed without noise programatically).
+Scale1: 0
+Scale2: 16
+Scale3: 8
+Scale4: 8
+Scale5: 8
+Scale6: 8
+Scale7: 8
+Scale8: 8
+Scale9: 8
+Scale10: 8
+
+
+
+
+
+
+
+
+
+
+
+

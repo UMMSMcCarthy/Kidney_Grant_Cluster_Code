@@ -1,0 +1,10 @@
+ #BSUB -R select[rh=6]
+ #BSUB -app RHEL7
+ #BSUB -n 1
+ #BSUB -W 120:00
+ #BSUB -R rusage[mem=100]
+ #BSUB -q long
+
+export PATH=$PATH:/home/wm11w/simind
+export SMC_DIR=/home/wm11w/simind/smc_dir/
+

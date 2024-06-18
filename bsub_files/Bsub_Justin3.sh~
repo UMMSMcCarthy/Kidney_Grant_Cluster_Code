@@ -1,0 +1,10 @@
+ #BSUB -R select[rh=6]
+ #BSUB -app RHEL7
+ #BSUB -n 1
+ #BSUB -W 4:00
+ #BSUB -R rusage[mem=100]
+ #BSUB -q short
+
+export PATH=$PATH:/home/jp22w/simind
+export SMC_DIR=/home/jp22w/simind/smc_dir/
+
